@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,11 @@ Route::get('/' ,function() {
 
 Route::get('/multiplication', function() {
     return view('multiplication');
+});
+
+Route::post('/multiplication',function(Request $request) {
+    $data['inputMul'] = $request-> input('inputMul');
+    return view('resultMultiplication',$data);
 });
 
 Route::get('/admin', function() {
