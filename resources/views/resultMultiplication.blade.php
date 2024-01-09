@@ -20,11 +20,10 @@
             </div>
             <div style="height: calc(100vh - 8rem)" class=" overflow-auto">
                 <div class="d-flex align-items-center justify-content-center fs-3 mx-5">
-                    <?php
-                        for ($i = 1; $i <= 24; $i++) {
-                            echo $i . " x " . $inputMul . " = " . ($i*$inputMul) . "<br/>";
-                        }
-                ?>
+                    @for ($i = 1; $i <= 24; $i++)
+                        {{ $i }} x {{ $inputMul }} = {{ $i * $inputMul }} <br/>
+                    @endfor
+                </div>
                 </div>
             </div>
         </div>
