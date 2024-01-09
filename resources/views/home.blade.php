@@ -35,19 +35,16 @@
             <h1>welcome to my works</h1>
         </div>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
-            <?php
-            foreach ($works as $work) {
-                echo
-                '<div  class="card bg-secondary" style="width: 18rem;">
-                    <img style = "height: 15rem; object-fit:cover" src="' . $work['image'] . '" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">' . $work['title'] . '</h5>
-                        <p class="card-text">' . $work['description'] . '</p>
-                        <a href="' . $work['link'] . '" target="_blank" class="btn btn-primary">ดูงานของฉัน</a>
-                    </div>
-                </div>';
-            }
-            ?>
+            @foreach ($works as $work)
+            <div class="card bg-secondary" style="width: 18rem;">
+                <img style="height: 15rem; object-fit: cover" src="{{ $work['image'] }}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $work['title'] }}</h5>
+                    <p class="card-text">{{ $work['description'] }}</p>
+                    <a href="{{ $work['link'] }}" target="_blank" class="btn btn-primary">ดูงานของฉัน</a>
+                </div>
+            </div>
+        @endforeach
         </div>
     </div>
 </body>
