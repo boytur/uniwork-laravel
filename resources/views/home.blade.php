@@ -19,7 +19,7 @@
             'link' => 'multiplication'
         ],
         [
-            'image' => 'https://avatars.githubusercontent.com/u/104257779?s=400&u=4e9c1cc0d7c1530af16a0293b5338375fb4af27e&v=4',
+            'image' => 'https://posyayee-v2.s3.us-east-005.backblazeb2.com/laravel-aminlte.gif',
             'title' => 'AdminLTE',
             'description' => 'สร้างฟอร์ม ตามแนบให้อยู่ในรูปแบบของ AdminLTE',
             'link' => 'admin'

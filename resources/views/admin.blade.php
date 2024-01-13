@@ -1,90 +1,93 @@
-@extends('layout.default');
+@extends('layout.default')
 
-@section('title',"Homepage")
+@section('title', 'Login')
 @section('content')
-<!-- Content Header (Page header) -->
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0">Starter Page</h1>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Starter Page</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-</div>
-<!-- /.content-header -->
-
-<!-- Main content -->
-<div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.
-                        </p>
-
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-
-                <div class="card card-primary card-outline">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.
-                        </p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div><!-- /.card -->
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="card card-primary container-sm">
+            <div class="card-header">
+                <h3 class="card-title">Login</h3>
             </div>
-            <!-- /.col-md-6 -->
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="m-0">Featured</h5>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">ชื่อ</label>
+                        <input type="email" class="form-control" id="" placeholder="Enter name">
                     </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Special title treatment</h6>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">นามสกุล</label>
+                        <input type="email" class="form-control" id="" placeholder="Enter lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">วันเดือนปีเกิด</label>
+                        <input type="date" class="form-control" id="" placeholder="Enter lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">เพศ</label><br>
+                        <input type="checkbox" id="exampleInputEmail1">
+                        <label for="">ชาย</label>
+                        <input type="checkbox" id="exampleInputEmail1">
+                        <label for="">หญิง</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">รูป</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">เลือกรูป</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">อัปโหลด</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <label for="floatingTextarea2">ที่อยู่</label>
+                        <textarea class="form-control" placeholder="กรุณาใส่ที่อยู่...." id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
+                    <br>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            สีที่ชอบ
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">แดง</a></li>
+                            <li><a class="dropdown-item" href="#">เขียว</a></li>
+                            <li><a class="dropdown-item" href="#">เหลือง</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <label for="exampleInputEmail1">แนวเพลงที่ชอบ</label><br>
+                        <input type="checkbox" id="exampleInputEmail1">
+                        <label for="">เพื่อชีวิต</label>
+                        <input type="checkbox" id="exampleInputEmail1">
+                        <label for="">ลุกทุ่ง</label>
+                        <input type="checkbox" id="exampleInputEmail1">
+                        <label for="">อื่นๆ</label>
+                    </div>
 
-                        <p class="card-text">With supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">ยินยอมให้เก็บข้อมูล</label>
                     </div>
                 </div>
-
-                <div class="card card-primary card-outline">
-                    <div class="card-header">
-                        <h5 class="m-0">Featured</h5>
+                <!-- /.card-body -->
+                <div class=" d-flex justify-content-between">
+                    <div class="card-footer bg-white">
+                        <button type="submit" class="btn btn-secondary">รีเซ็ต </button>
                     </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Special title treatment</h6>
-
-                        <p class="card-text">With supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-footer  bg-white">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
+
                 </div>
-            </div>
-            <!-- /.col-md-6 -->
+            </form>
         </div>
-        <!-- /.row -->
-    </div><!-- /.container-fluid -->
-</div>
+    </div>
+
 @endsection
