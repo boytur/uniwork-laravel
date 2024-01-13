@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\adminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +26,4 @@ Route::post('/multiplication',function(Request $request) {
     return view('resultMultiplication',$data);
 });
 
-Route::get('/admin', function() {
-    return view('admin');
-});
+Route::get('/admin', [adminController::class, 'index']);
