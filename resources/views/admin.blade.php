@@ -6,7 +6,7 @@
     <div class="content-header">
         <div class="card card-primary container-sm">
             <div class="card-header">
-                <h3 class="card-title">Login</h3>
+                <h3 class="card-title">Form</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -14,11 +14,11 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">ชื่อ</label>
-                        <input type="email" class="form-control" id="" placeholder="Enter name">
+                        <input type="text" class="form-control" id="" placeholder="Enter name">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">นามสกุล</label>
-                        <input type="email" class="form-control" id="" placeholder="Enter lastname">
+                        <input type="text" class="form-control" id="" placeholder="Enter lastname">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">วันเดือนปีเกิด</label>
