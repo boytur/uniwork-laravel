@@ -20,5 +20,10 @@
                     alt="">
             </div>
         </a>
+        <form action="{{ url('logout') }}" method="post" class="d-flex align-items-center">
+            @csrf
+            <button type="submit" class="btn btn-link">ออกจากระบบ</button>
+        </form>
+
     </div>
 </nav>

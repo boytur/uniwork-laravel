@@ -38,7 +38,9 @@
         @component('components.navbar')
         @endcomponent
         <div class="d-flex justify-content-center pt-3 pb-3">
-            <h1>welcome to my works</h1>
+            @if (Auth::check())
+                <h1>Welcome, {{ Auth::user()->name }}!</h1>
+            @endif
         </div>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
             @foreach ($works as $work)
