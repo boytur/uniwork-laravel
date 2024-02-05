@@ -3,8 +3,8 @@
 @section('title', 'Login')
 @section('content')
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="card card-primary container-sm">
+    <div class="content-header container-sm">
+        <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Form</h3>
             </div>

@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\C_title;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +29,6 @@ Route::post('/multiplication',function(Request $request) {
 });
 
 Route::get('/admin', [adminController::class, 'index']);
+
+Route::resource('/title',C_title::class);
+Route::post('/title',[C_title::class,'store']);

@@ -19,9 +19,15 @@
             'link' => 'multiplication'
         ],
         [
-            'image' => 'https://posyayee-v2.s3.us-east-005.backblazeb2.com/laravel-aminlte.gif',
+            'image' => 'https://placehold.co/600x400',
             'title' => 'AdminLTE',
             'description' => 'สร้างฟอร์ม ตามแนบให้อยู่ในรูปแบบของ AdminLTE',
+            'link' => 'admin'
+        ],
+        [
+            'image' => 'https://placehold.co/600x400',
+            'title' => 'Basic CRUD',
+            'description' => 'เชื่อมต่อฐานข้อมูลและทำการเพิ่ม ลบ แก้ไข ข้อมูล เบื้องต้น',
             'link' => 'admin'
         ],
     ];
