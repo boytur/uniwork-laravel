@@ -48,3 +48,6 @@ Route::middleware(['auth'])->group(function () {
 
 });
 
+Route::get('jquery', function(){
+    return view('multiplicationjquery');
+});
